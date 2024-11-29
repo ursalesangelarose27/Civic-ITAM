@@ -27,6 +27,9 @@
             <li><a href="#"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
             <li><a href="../diagnostichistory.php"><i class="fas fa-history"></i> Diagnostic History</a></li>
             <li><a href="../manageuser.php"><i class="fas fa-users"></i> Manage Users</a></li>
+            <li><a href="#"><i class="fas fa-file-alt"></i> Reports</a></li>
+            <li><a href="#"><i class="fas fa-tools"></i> Maintenance Schedule</a></li>
+
         </ul>
 
     </div>
