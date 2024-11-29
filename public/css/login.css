@@ -1,0 +1,27 @@
+body {
+    background: linear-gradient(135deg, #ff8c00, #d2a647);
+    font-family: 'Arial', sans-serif;
+}
+
+.btn-orange {
+    background-color: orange;
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: #ff8c00;
+}
+
+.logowrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #ff8c00;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.logowrap img {
+    max-width: 150px;
+    height: auto;
+}

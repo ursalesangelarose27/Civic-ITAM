@@ -72,3 +72,7 @@ label {
 .btn-delete:hover {
     background-color: #a71d2a;
 }
+
+.action-icons a {
+    text-decoration: none;
+}

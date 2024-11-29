@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIVIC | Edit Asset Details</title>
+    <title>CIVIC | Add Diagnostic</title>
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     <link rel="stylesheet" href="../public/css/superadmin/sidebar.css">
-    <link rel="stylesheet" href="../public/css/superadmin/addassetdetails.css">
+    <link rel="stylesheet" href="../public/css/superadmin/assetconsignment.css">
 
 </head>
 
@@ -21,11 +21,12 @@
         </div>
         <ul class="nav flex-column">
             <li><a href="./dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="./assetdetails.php" class="active"><i class="fas fa-cogs"></i> Asset Details</a></li>
+            <li><a href="./assetdetails.php"><i class="fas fa-cogs"></i> Asset Details</a></li>
             <li><a href="./status.php"><i class="fas fa-check-circle"></i> Status</a></li>
             <li><a href="./assetconsignment.php"><i class="fas fa-truck"></i> Consignment</a></li>
             <li><a href="#"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
-            <li><a href="./diagnostichistory.php"><i class="fas fa-history"></i> Diagnostic History</a></li>
+            <li><a href="./diagnostichistory.php" class="active"><i class="fas fa-history"></i> Diagnostic History</a>
+            </li>
             <li><a href="./manageuser.php"><i class="fas fa-users"></i> Manage Users</a></li>
         </ul>
 
@@ -37,7 +38,7 @@
                 <button class="btn btn-orange" id="sidebarToggle">
                     <i class="bi bi-list"></i>
                 </button>
-                <a class="navbar-brand ms-3" href="#">Edit Asset Details</a>
+                <a class="navbar-brand ms-3" href="#">Add Diagnostic</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -66,56 +67,32 @@
 
                 <div class="form-grid">
                     <div class="form-group">
-                        <label for="id">Id:</label>
-                        <input type="text" id="id" class="input-field" placeholder="Enter Id">
+                        <label for="id">ID:</label>
+                        <input type="text" id="id" class="input-field" placeholder="Enter ID">
                     </div>
                     <div class="form-group">
-                        <label for="assetCode">Asset Code:</label>
-                        <input type="text" id="assetCode" class="input-field" placeholder="Enter Asset Code">
+                        <label for="assetDetailsId">Asset Details ID:</label>
+                        <input type="text" id="assetDetailsId" class="input-field" placeholder="Enter Asset Details ID">
                     </div>
                     <div class="form-group">
-                        <label for="computerName">Computer Name:</label>
-                        <input type="text" id="computerName" class="input-field" placeholder="Enter Computer Name">
+                        <label for="job">Job:</label>
+                        <input type="text" id="job" class="input-field" placeholder="Enter Job">
                     </div>
                     <div class="form-group">
-                        <label for="itemId">Item ID:</label>
-                        <input type="text" id="itemId" class="input-field" placeholder="Enter Item ID">
+                        <label for="jobType">Job Type:</label>
+                        <input type="text" id="jobType" class="input-field" placeholder="Enter Job Type">
                     </div>
                     <div class="form-group">
-                        <label for="description">Description:</label>
-                        <input type="text" id="description" class="input-field" placeholder="Enter Description">
+                        <label for="conductedBy">Conducted By:</label>
+                        <input type="text" id="conductedBy" class="input-field" placeholder="Enter Name">
                     </div>
                     <div class="form-group">
-                        <label for="itemType">Item Type:</label>
-                        <input type="text" id="itemType" class="input-field" placeholder="Enter Item Type">
+                        <label for="jobDate">Job Date:</label>
+                        <input type="date" id="jobDate" class="input-field">
                     </div>
                     <div class="form-group">
-                        <label for="serialNumber">Serial Number:</label>
-                        <input type="text" id="serialNumber" class="input-field" placeholder="Enter Serial Number">
-                    </div>
-                    <div class="form-group">
-                        <label for="supplier">Supplier:</label>
-                        <input type="text" id="supplier" class="input-field" placeholder="Enter Supplier">
-                    </div>
-                    <div class="form-group">
-                        <label for="purchaseDate">Purchase Date:</label>
-                        <input type="date" id="purchaseDate" class="input-field">
-                    </div>
-                    <div class="form-group">
-                        <label for="invoiceNumber">Invoice Number:</label>
-                        <input type="text" id="invoiceNumber" class="input-field" placeholder="Enter Invoice Number">
-                    </div>
-                    <div class="form-group">
-                        <label for="amount">Amount:</label>
-                        <input type="number" id="amount" class="input-field" placeholder="Enter Amount">
-                    </div>
-                    <div class="form-group">
-                        <label for="warranty">Warranty:</label>
-                        <input type="text" id="warranty" class="input-field" placeholder="Enter Warranty">
-                    </div>
-                    <div class="form-group">
-                        <label for="category">Category:</label>
-                        <input type="text" id="category" class="input-field" placeholder="Enter Category">
+                        <label for="cost">Cost:</label>
+                        <input type="number" id="cost" class="input-field" placeholder="Enter Cost">
                     </div>
                     <div class="form-group">
                         <label for="createDate">Create Date:</label>
@@ -125,18 +102,9 @@
                         <label for="createdBy">Created By:</label>
                         <input type="text" id="createdBy" class="input-field" placeholder="Enter Creator">
                     </div>
-                    <div class="form-group">
-                        <label for="lastModifiedDate">Last Modified Date:</label>
-                        <input type="date" id="lastModifiedDate" class="input-field">
-                    </div>
-                    <div class="form-group">
-                        <label for="lastModifiedBy">Last Modified By:</label>
-                        <input type="text" id="lastModifiedBy" class="input-field" placeholder="Enter Last Modifier">
-                    </div>
                 </div>
-
                 <div class="button-group">
-                    <button type="button" class="btn btn-update">Update</button>
+                    <button type="button" class="btn btn-update">Add</button>
                     <button type="button" class="btn btn-cancel">Cancel</button>
                 </div>
         </form>

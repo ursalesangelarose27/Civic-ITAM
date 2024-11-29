@@ -31,9 +31,9 @@
         </div>
         <ul class="nav flex-column">
             <li><a href="./dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="./assetdetails.php" class="active"><i class="fas fa-cogs"></i> Asset Details</a></li>
+            <li><a href="./assetdetails.php"><i class="fas fa-cogs"></i> Asset Details</a></li>
             <li><a href="./status.php"><i class="fas fa-check-circle"></i> Status</a></li>
-            <li><a href="./assetconsignment.php"><i class="fas fa-truck"></i> Consignment</a></li>
+            <li><a href="./assetconsignment.php" class="active"><i class="fas fa-truck"></i> Consignment</a></li>
             <li><a href="#"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
             <li><a href="./diagnostichistory.php"><i class="fas fa-history"></i> Diagnostic History</a></li>
             <li><a href="./manageuser.php"><i class="fas fa-users"></i> Manage Users</a></li>
@@ -47,7 +47,7 @@
                 <button class="btn btn-orange" id="sidebarToggle">
                     <i class="bi bi-list"></i>
                 </button>
-                <a class="navbar-brand ms-3" href="#">Asset Details</a>
+                <a class="navbar-brand ms-3" href="#">Asset Consignment</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -75,65 +75,38 @@
         <div class="container-fluid py-4">
             <div class="row mb-4">
                 <div class="col-12 d-flex justify-content-between">
-                    <input type="text" id="searchInput" class="form-control w-50" placeholder="Search assets...">
-                    <a href="./addassetdetails.php">
+                    <input type="text" id="searchInput" class="form-control w-50" placeholder="Search">
+                    <a href="./addassetconsignment.php">
                         <button class="btn btn-orange" id="addAssetBtn">Add</button>
                     </a>
                 </div>
             </div>
 
             <div class="table-responsive">
-                <table class="table table-striped table-bordered  table-hover" id="assetTable">
+                <table class="table table-striped table-bordered table-hover" id="assetTable">
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Asset Code</th>
-                            <th>Computer Name</th>
-                            <th>Item ID</th>
-                            <th>Description</th>
-                            <th>Item Type</th>
-                            <th>Serial Number</th>
-                            <th>Supplier</th>
-                            <th>Purchase Date</th>
-                            <th>Invoice Number</th>
-                            <th>Amount</th>
-                            <th>Warranty</th>
-                            <th>Category</th>
-                            <th>Create Date</th>
-                            <th>Created By</th>
-                            <th>Last Modified Date</th>
-                            <th>Last Modified By</th>
+                            <th>Reference</th>
+                            <th>Consignment ID</th>
+                            <th>Asset Details ID</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>AC-1001</td>
-                            <td>Desktop PC</td>
-                            <td>Item-001</td>
-                            <td>Core i7, 16GB RAM</td>
-                            <td>Computer</td>
-                            <td>SN12345678</td>
-                            <td>Supplier A</td>
-                            <td>2022-01-01</td>
-                            <td>INV-12345</td>
-                            <td>$1200</td>
-                            <td>1 year</td>
-                            <td>IT</td>
-                            <td>2022-01-01</td>
-                            <td>Admin</td>
-                            <td>2023-01-01</td>
-                            <td>Admin</td>
+                            <td>REF123</td>
+                            <td>CS1001</td>
+                            <td>AD123</td>
                             <td>
                                 <center>
                                     <div class="action-icons">
-                                        <a href="./editassetdetails.php" style="text-decoration: none;">
+                                        <a href="./editassetconsignment.php" style="text-decoration: none;">
                                             <button class="icon-btn">
                                                 <i class="fas fa-edit"></i>
                                             </button>
                                         </a>
-
                                         <button class="icon-btn"><i class="fas fa-trash"></i></button>
                                     </div>
                                 </center>
@@ -141,26 +114,13 @@
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>AC-1002</td>
-                            <td>Laptop</td>
-                            <td>Item-002</td>
-                            <td>Core i5, 8GB RAM</td>
-                            <td>Computer</td>
-                            <td>SN23456789</td>
-                            <td>Supplier B</td>
-                            <td>2022-02-01</td>
-                            <td>INV-23456</td>
-                            <td>$800</td>
-                            <td>2 years</td>
-                            <td>IT</td>
-                            <td>2022-02-01</td>
-                            <td>Admin</td>
-                            <td>2023-02-01</td>
-                            <td>Admin</td>
+                            <td>REF124</td>
+                            <td>CS1002</td>
+                            <td>AD124</td>
                             <td>
                                 <center>
                                     <div class="action-icons">
-                                        <a href="./editassetdetails.php" style="text-decoration: none;">
+                                        <a href="./editassetconsignment.php" style="text-decoration: none;">
                                             <button class="icon-btn">
                                                 <i class="fas fa-edit"></i>
                                             </button>
@@ -172,26 +132,13 @@
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td>AC-1003</td>
-                            <td>Monitor</td>
-                            <td>Item-003</td>
-                            <td>27-inch, 4K</td>
-                            <td>Accessory</td>
-                            <td>SN34567890</td>
-                            <td>Supplier C</td>
-                            <td>2022-03-01</td>
-                            <td>INV-34567</td>
-                            <td>$500</td>
-                            <td>1 year</td>
-                            <td>IT</td>
-                            <td>2022-03-01</td>
-                            <td>Admin</td>
-                            <td>2023-03-01</td>
-                            <td>Admin</td>
+                            <td>REF125</td>
+                            <td>CS1003</td>
+                            <td>AD125</td>
                             <td>
                                 <center>
                                     <div class="action-icons">
-                                        <a href="./editassetdetails.php" style="text-decoration: none;">
+                                        <a href="./editassetconsignment.php" style="text-decoration: none;">
                                             <button class="icon-btn">
                                                 <i class="fas fa-edit"></i>
                                             </button>
@@ -203,26 +150,13 @@
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td>AC-1004</td>
-                            <td>Printer</td>
-                            <td>Item-004</td>
-                            <td>Laser, Color</td>
-                            <td>Accessory</td>
-                            <td>SN45678901</td>
-                            <td>Supplier D</td>
-                            <td>2022-04-01</td>
-                            <td>INV-45678</td>
-                            <td>$250</td>
-                            <td>1 year</td>
-                            <td>Office</td>
-                            <td>2022-04-01</td>
-                            <td>Admin</td>
-                            <td>2023-04-01</td>
-                            <td>Admin</td>
+                            <td>REF126</td>
+                            <td>CS1004</td>
+                            <td>AD126</td>
                             <td>
                                 <center>
                                     <div class="action-icons">
-                                        <a href="./editassetdetails.php" style="text-decoration: none;">
+                                        <a href="./editassetconsignment.php" style="text-decoration: none;">
                                             <button class="icon-btn">
                                                 <i class="fas fa-edit"></i>
                                             </button>
@@ -234,26 +168,13 @@
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td>AC-1005</td>
-                            <td>Router</td>
-                            <td>Item-005</td>
-                            <td>Wi-Fi 6, Dual Band</td>
-                            <td>Network</td>
-                            <td>SN56789012</td>
-                            <td>Supplier E</td>
-                            <td>2022-05-01</td>
-                            <td>INV-56789</td>
-                            <td>$150</td>
-                            <td>3 years</td>
-                            <td>Networking</td>
-                            <td>2022-05-01</td>
-                            <td>Admin</td>
-                            <td>2023-05-01</td>
-                            <td>Admin</td>
+                            <td>REF127</td>
+                            <td>CS1005</td>
+                            <td>AD127</td>
                             <td>
                                 <center>
                                     <div class="action-icons">
-                                        <a href="./editassetdetails.php" style="text-decoration: none;">
+                                        <a href="./editassetconsignment.php" style="text-decoration: none;">
                                             <button class="icon-btn">
                                                 <i class="fas fa-edit"></i>
                                             </button>
@@ -264,9 +185,9 @@
                             </td>
                         </tr>
                     </tbody>
-
                 </table>
             </div>
+
         </div>
     </div>
 
