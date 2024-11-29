@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIVIC | Edit Status</title>
-    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>CIVIC | Ediit User</title>
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-    <link rel="stylesheet" href="../public/css/superadmin/sidebar.css">
-    <link rel="stylesheet" href="../public/css/superadmin/status.css">
+    <link rel="stylesheet" href="../../public/css/superadmin/sidebar.css">
+    <link rel="stylesheet" href="../../public/css/superadmin/status.css">
 
 </head>
 
@@ -17,16 +17,16 @@
 
     <div id="sidebar">
         <div class="sidebar-header text-center">
-            <img src="../images/civicph_logo.png" alt="CIVIC" style="max-width: 30%; height: auto;">
+            <img src="../../images/civicph_logo.png" alt="CIVIC" style="max-width: 30%; height: auto;">
         </div>
         <ul class="nav flex-column">
-            <li><a href="./dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="./assetdetails.php"><i class="fas fa-cogs"></i> Asset Details</a></li>
-            <li><a href="./status.php" class="active"><i class="fas fa-check-circle"></i> Status</a></li>
-            <li><a href="./assetconsignment.php"><i class="fas fa-truck"></i> Consignment</a></li>
+            <li><a href="../dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="../assetdetails.php"><i class="fas fa-cogs"></i> Asset Details</a></li>
+            <li><a href="../status.php"><i class="fas fa-check-circle"></i> Status</a></li>
+            <li><a href="../assetconsignments.php"><i class="fas fa-truck"></i> Consignment</a></li>
             <li><a href="#"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
-            <li><a href="./diagnostichistory.php"><i class="fas fa-history"></i> Diagnostic History</a></li>
-            <li><a href="./manageuser.php"><i class="fas fa-users"></i> Manage Users</a></li>
+            <li><a href="../diagnostichistory.php"><i class="fas fa-history"></i> Diagnostic History</a></li>
+            <li><a href="../manageuser.php" class="active"><i class="fas fa-users"></i> Manage Users</a></li>
         </ul>
 
     </div>
@@ -37,7 +37,7 @@
                 <button class="btn btn-orange" id="sidebarToggle">
                     <i class="bi bi-list"></i>
                 </button>
-                <a class="navbar-brand ms-3" href="#">Edit Status</a>
+                <a class="navbar-brand ms-3" href="#">Add User</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -72,26 +72,43 @@
 
             <div class="form-grid">
                 <div class="form-group">
-                    <label for="id">Id:</label>
-                    <input type="text" id="id" class="input-field" placeholder="Enter Id">
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" class="input-field" placeholder="Enter ID">
+                </div>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" class="input-field" placeholder="Enter Full Name">
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" class="input-field" placeholder="Enter Username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" class="input-field" placeholder="Enter Password">
+                </div>
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="text" id="contactNumber" class="input-field" placeholder="Enter Contact Number">
                 </div>
                 <div class="form-group">
                     <label for="role">Department:</label>
                     <select id="role" class="input-field">
-                        <option value="super-admin">Active</option>
-                        <option value="admin">Inactive</option>
+                        <option value="super-admin">CMI</option>
+                        <option value="admin">FINANCE</option>
+                        <option value="staff">TOPSPOT</option>
+                        <option value="staff">PRIME QUEST</optio>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="location">Location:</label>
-                    <input type="text" id="location" class="input-field" placeholder="Enter Location">
-                </div>
-                <div class="form-group">
-                    <label for="description">Description:</label>
-                    <input type="text" id="description" class="input-field" placeholder="Enter Description">
+                    <label for="role">Role:</label>
+                    <select id="role" class="input-field">
+                        <option value="super-admin">Super Admin</option>
+                        <option value="admin">Admin</option>
+                        <option value="staff">Staff</option>
+                    </select>
                 </div>
             </div>
-
             <div class="button-group">
                 <button type="button" class="btn btn-update">Update</button>
                 <button type="button" class="btn btn-cancel">Cancel</button>
@@ -110,9 +127,9 @@
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
     document.getElementById('sidebarToggle').addEventListener('click', function() {

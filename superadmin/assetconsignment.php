@@ -76,7 +76,7 @@
             <div class="row mb-4">
                 <div class="col-12 d-flex justify-content-between">
                     <input type="text" id="searchInput" class="form-control w-50" placeholder="Search">
-                    <a href="./addassetconsignment.php">
+                    <a href="./add/assetconsignment.php">
                         <button class="btn btn-orange" id="addAssetBtn">Add</button>
                     </a>
                 </div>
@@ -102,7 +102,7 @@
                             <td>
                                 <center>
                                     <div class="action-icons">
-                                        <a href="./editassetconsignment.php" style="text-decoration: none;">
+                                        <a href="./edit/assetconsignment.php" style="text-decoration: none;">
                                             <button class="icon-btn">
                                                 <i class="fas fa-edit"></i>
                                             </button>
@@ -120,7 +120,7 @@
                             <td>
                                 <center>
                                     <div class="action-icons">
-                                        <a href="./editassetconsignment.php" style="text-decoration: none;">
+                                        <a href="./edit/assetconsignment.php" style="text-decoration: none;">
                                             <button class="icon-btn">
                                                 <i class="fas fa-edit"></i>
                                             </button>
@@ -138,7 +138,7 @@
                             <td>
                                 <center>
                                     <div class="action-icons">
-                                        <a href="./editassetconsignment.php" style="text-decoration: none;">
+                                        <a href="./edit/assetconsignment.php" style="text-decoration: none;">
                                             <button class="icon-btn">
                                                 <i class="fas fa-edit"></i>
                                             </button>
@@ -156,7 +156,7 @@
                             <td>
                                 <center>
                                     <div class="action-icons">
-                                        <a href="./editassetconsignment.php" style="text-decoration: none;">
+                                        <a href="./edit/assetconsignment.php" style="text-decoration: none;">
                                             <button class="icon-btn">
                                                 <i class="fas fa-edit"></i>
                                             </button>
@@ -174,7 +174,7 @@
                             <td>
                                 <center>
                                     <div class="action-icons">
-                                        <a href="./editassetconsignment.php" style="text-decoration: none;">
+                                        <a href="./edit/assetconsignment.php" style="text-decoration: none;">
                                             <button class="icon-btn">
                                                 <i class="fas fa-edit"></i>
                                             </button>
