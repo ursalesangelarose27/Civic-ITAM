@@ -3,6 +3,8 @@
 CREATE DATABASE civicitam;
 
 FOR EXAMPLE (ADD COMMENT IF NECESSARY)
+
+//used for user page
 CREATE TABLE employees (
     id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
@@ -16,6 +18,60 @@ CREATE TABLE employees (
     hire_date DATE NOT NULL
 );
 
+//Not final and subject to change based on what is needed
+//pwede nyo palitan
+//this table is based on this 
+https://docs.google.com/spreadsheets/d/1PK7PUsHtfrw7iIUXcB5UD7wWL64bLVc652pDSfj4iNM/edit?gid=354465904#gid=354465904
 
+CREATE TABLE assetdetails (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    assetcode VARCHAR(50) NOT NULL,
+    itemid INT NOT NULL,
+    computername VARCHAR(100),
+    description TEXT,
+    itemtype VARCHAR(50),
+    serialnumber VARCHAR(50),
+    supplier VARCHAR(100),
+    purchasedate DATE,
+    invoicenumber VARCHAR(50),
+    amount DECIMAL(10, 2),
+    warranty VARCHAR(50),
+    category VARCHAR(50),
+    status VARCHAR(50),
+    location VARCHAR(100),
+    createDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    createdby VARCHAR(100),
+    lastmodifieddate TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    lastmodifiedby VARCHAR(100)
+);
 
+CREATE TABLE assetconsignment (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    reference VARCHAR(100),
+    consignmentId INT,
+    assetdetailsid INT,
+    FOREIGN KEY (assetdetailsid) REFERENCES assetdetails(id)
+);
 
+CREATE TABLE diagnostichistory (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    assetdetailsid INT,
+    job VARCHAR(255),
+    jobtype VARCHAR(50),
+    conductedby VARCHAR(100),
+    jobdate DATE,
+    cost DECIMAL(10, 2),
+    createdate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    createdby VARCHAR(100),
+    FOREIGN KEY (assetdetailsid) REFERENCES assetdetails(Id)
+);
+
+CREATE TABLE assetconsignmenthistory (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    employeeid INT,
+    name VARCHAR(100),
+    remarks TEXT,
+    issueddate DATE,
+    createdate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    createdby VARCHAR(100)
+);
