@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIVIC | Diagnostic History</title>
+    <title>CIVIC | Tickets</title>
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     <link rel="stylesheet" href="../public/css/superadmin/sidebar.css">
-    <link rel="stylesheet" href="../public/css/superadmin/manageuser.css">
+    <link rel="stylesheet" href="../public/css/superadmin/tickets.css">
     <style>
     #table .assetTable th {
         white-space: nowrap;
@@ -34,12 +34,11 @@
             <li><a href="./assetdetails.php"><i class="fas fa-cogs"></i> Asset Details</a></li>
             <li><a href="./status.php"><i class="fas fa-check-circle"></i> Status</a></li>
             <li><a href="./assetconsignment.php"><i class="fas fa-truck"></i> Consignment</a></li>
-            <li><a href="./tickets.php"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
+            <li><a href="./tickets.php" class="active"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
             <li><a href="#"><i class="fas fa-file-alt"></i> Reports</a></li>
             <li><a href="#"><i class="fas fa-tools"></i> Maintenance Schedule</a></li>
-            <li><a href="./diagnostichistory.php"><i class="fas fa-history"></i> Diagnostic History</a>
-            </li>
-            <li><a href="./manageuser.php" class="active"><i class="fas fa-users"></i> Manage Users</a></li>
+            <li><a href="./diagnostichistory.php"><i class="fas fa-history"></i> Diagnostic History</a></li>
+            <li><a href="./manageuser.php"><i class="fas fa-users"></i> Manage Users</a></li>
         </ul>
 
     </div>
@@ -50,7 +49,7 @@
                 <button class="btn btn-orange" id="sidebarToggle">
                     <i class="bi bi-list"></i>
                 </button>
-                <a class="navbar-brand ms-3" href="#">Manage History</a>
+                <a class="navbar-brand ms-3" href="#">Tickets</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -78,51 +77,63 @@
         <div class="container-fluid py-4">
             <div class="row mb-4">
                 <div class="col-12 d-flex justify-content-between">
-                    <input type="text" id="searchInput" class="form-control w-50" placeholder="Search">
-                    <a href="./add/user.php">
+                    <input type="text" id="searchInput" class="form-control w-50" placeholder="Search Tickets">
+                    <a href="#">
                         <button class="btn btn-orange" id="addAssetBtn">Add</button>
                     </a>
                 </div>
             </div>
 
             <div class="table-responsive">
-                <table class="table table-striped table-bordered table-hover" id="assetTable">
+                <table class="table table-striped table-bordered  table-hover" id="assetTable">
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Full Name</th>
-                            <th>Username</th>
-                            <th>Contact Number</th>
-                            <th>Department</th>
-                            <th>Role</th>
+                            <th>Ticket Code</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Assigned To</th>
+                            <th>Created Date</th>
+                            <th>Created By</th>
+                            <th>Last Modified Date</th>
+                            <th>Last Modified By</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
+                            <td>TCK-1001</td>
+                            <td>Printer Not Working</td>
+                            <td>The office printer is jammed and not functioning.</td>
+                            <td>High</td>
+                            <td>Open</td>
                             <td>John Doe</td>
-                            <td>johndoe123</td>
-                            <td>(123) 456-7890</td>
-                            <td>IT</td>
-                            <td>Admin</td>
+                            <td>2024-11-01</td>
+                            <td>Jane Smith</td>
+                            <td>2024-11-05</td>
+                            <td>Michael Brown</td>
                             <td>
                                 <center>
                                     <div class="action-icons">
-                                        <a href="./edit/user.php" style="text-decoration: none;">
+                                        <a href="#" style="text-decoration: none;">
                                             <button class="icon-btn">
                                                 <i class="fas fa-edit"></i>
                                             </button>
                                         </a>
+
                                         <button class="icon-btn"><i class="fas fa-trash"></i></button>
                                     </div>
                                 </center>
                             </td>
 
+                        </tr>
                     </tbody>
+
                 </table>
             </div>
-
         </div>
     </div>
 

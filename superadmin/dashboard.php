@@ -24,7 +24,7 @@
             <li><a href="./assetdetails.php"><i class="fas fa-cogs"></i> Asset Details</a></li>
             <li><a href="./status.php"><i class="fas fa-check-circle"></i> Status</a></li>
             <li><a href="./assetconsignment.php"><i class="fas fa-truck"></i> Consignment</a></li>
-            <li><a href="#"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
+            <li><a href="./tickets.php"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
             <li><a href="#"><i class="fas fa-file-alt"></i> Reports</a></li>
             <li><a href="#"><i class="fas fa-tools"></i> Maintenance Schedule</a></li>
             <li><a href="./diagnostichistory.php"><i class="fas fa-history"></i> Diagnostic History</a></li>
