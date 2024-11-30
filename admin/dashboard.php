@@ -21,12 +21,14 @@
         </div>
         <ul class="nav flex-column">
             <li><a href="./dashboard.php" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="./assetdetails.php"><i class="fas fa-cogs"></i> Asset Details</a></li>
-            <li><a href="./status.php"><i class="fas fa-check-circle"></i> Status</a></li>
-            <li><a href="./assetconsignment.php"><i class="fas fa-truck"></i> Consignment</a></li>
-            <li><a href="#"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
+            <li><a href="./assetsmanagement.php"><i class="fas fa-cogs"></i> Asset Management</a></li>
+            <li><a href="./maintenancemanagement.php"><i class="fas fa-check-circle"></i> Maintenance Management</a></li>
+            <li><a href="./pcassets.php"><i class="fas fa-truck"></i> PC's</a></li>
+            <li><a href="./ticketsmanagement.php"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
+            <li><a href="./reminders.php"><i class="fas fa-history"></i> REMINDERS</a></li>
+            <li><a href="./reports.php"><i class="fas fa-history"></i> Reports</a></li>
             <li><a href="./diagnostichistory.php"><i class="fas fa-history"></i> Diagnostic History</a></li>
-            <li><a href="./manageuser.php"><i class="fas fa-users"></i> Manage Users</a></li>
+            <li><a href="./usermanagement.php"><i class="fas fa-users"></i> Manage Users</a></li>
         </ul>
 
     </div>
