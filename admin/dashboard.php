@@ -25,7 +25,7 @@
             <li><a href="./maintenancemanagement.php"><i class="fas fa-check-circle"></i> Maintenance Management</a></li>
             <li><a href="./pcassets.php"><i class="fas fa-truck"></i> PC's</a></li>
             <li><a href="./ticketsmanagement.php"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
-            <li><a href="./reminders.php"><i class="fas fa-history"></i> REMINDERS</a></li>
+            <li><a href="./reminders.php"><i class="bi bi-clipboard-pulse"></i> REMINDERS</a></li>
             <li><a href="./reports.php"><i class="fas fa-history"></i> Reports</a></li>
             <li><a href="./diagnostichistory.php"><i class="fas fa-history"></i> Diagnostic History</a></li>
             <li><a href="./usermanagement.php"><i class="fas fa-users"></i> Manage Users</a></li>
