@@ -28,7 +28,7 @@
             <li><a href="./reminders.php" class="nav-link text-white"><i class="bi bi-clipboard-pulse"></i> Overdue</a></li>
             <li><a href="./reports.php" class="nav-link text-white"><i class="bi bi-file-earmark-text"></i> Reports</a></li>
             <li><a href="./diagnostichistory.php" class="nav-link text-white"><i class="fas fa-history"></i> Diagnostic History</a></li>
-            <li><a href="./usermanagement.php" class="nav-link text-white"><i class="bi bi-person"></i> Manage Users</a></li>
+            <li><a href="./usermanagement.php" class="nav-link text-white"><i class="bi bi-person"></i> Users</a></li>
         </ul>
     </div>
     <div id="content">

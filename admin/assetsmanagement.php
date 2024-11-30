@@ -8,7 +8,7 @@
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-    <link rel="stylesheet" href="../public/css/admin/dashboard.css">
+    <link rel="stylesheet" href="../public/css/admin/assetmanagement.css">
     <link rel="stylesheet" href="../public/css/admin/sidebar.css">
 </head>
 
@@ -20,14 +20,14 @@
     </div>
     <ul class="nav flex-column">
         <li><a href="./dashboard.php" class="nav-link text-white"><i class="bi bi-layout-text-window-reverse"></i> Dashboard</a></li>
-        <li><a href="./assetsmanagement.php" class="nav-link text-white active"><i class="bi bi-ui-checks-grid"></i> Asset Management</a></li>
-        <li><a href="./maintenancemanagement.php" class="nav-link text-white"><i class="bi bi-tools"></i> Maintenance Management</a></li>
+        <li><a href="./assetsmanagement.php" class="nav-link text-white"><i class="bi bi-ui-checks-grid"></i> Asset Management</a></li>
+        <li><a href="./maintenancemanagement.php" class="nav-link text-white active"><i class="bi bi-tools"></i> Maintenance Management</a></li>
         <li><a href="./pcassets.php" class="nav-link text-white"><i class="bi bi-laptop"></i> PC's</a></li>
         <li><a href="./ticketsmanagement.php" class="nav-link text-white"><i class="bi bi-ticket-perforated"></i> Tickets</a></li>
         <li><a href="./reminders.php" class="nav-link text-white"><i class="bi bi-clipboard-pulse"></i> Overdue</a></li>
         <li><a href="./reports.php" class="nav-link text-white"><i class="bi bi-file-earmark-text"></i> Reports</a></li>
         <li><a href="./diagnostichistory.php" class="nav-link text-white"><i class="fas fa-history"></i> Diagnostic History</a></li>
-        <li><a href="./usermanagement.php" class="nav-link text-white"><i class="bi bi-person"></i> Manage Users</a></li>
+        <li><a href="./usermanagement.php" class="nav-link text-white"><i class="bi bi-person"></i> Users</a></li>
     </ul>
 </div>
 
@@ -62,8 +62,8 @@
         </div>
     </nav>
 
-        <div class="container-fluid py-4">
-    <!-- Header Section -->
+    <div class="container-fluid py-4">
+
     <div class="row mb-4">
         <div class="col-12">
             <h3 class="text-dark">Assets Management</h3>
@@ -72,9 +72,9 @@
         </div>
     </div>
 
-    <!-- Summary Cards -->
+
     <div class="row g-3">
-        <!-- Total Assets -->
+ 
         <div class="col-lg-3 col-md-6">
             <div class="card shadow-sm border-0">
                 <div class="card-body d-flex align-items-center">
@@ -86,7 +86,7 @@
                 </div>
             </div>
         </div>
-        <!-- Available Assets -->
+
         <div class="col-lg-3 col-md-6">
             <div class="card shadow-sm border-0">
                 <div class="card-body d-flex align-items-center">
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <!-- Assigned Assets -->
+
         <div class="col-lg-3 col-md-6">
             <div class="card shadow-sm border-0">
                 <div class="card-body d-flex align-items-center">
@@ -110,7 +110,7 @@
                 </div>
             </div>
         </div>
-        <!-- Under Maintenance -->
+
         <div class="col-lg-3 col-md-6">
             <div class="card shadow-sm border-0">
                 <div class="card-body d-flex align-items-center">
@@ -124,7 +124,6 @@
         </div>
     </div>
 
-    <!-- Asset List Section -->
     <div class="row mt-4">
         <div class="col-12">
             <h5 class="mb-3">Asset Inventory</h5>
@@ -147,8 +146,8 @@
                         <td>Dell Laptop</td>
                         <td>Computers</td>
                         <td><span class="badge bg-success">Available</span></td>
-                        <td>Jherald Eslava</td>
-                        <td>2024-11-30</td>
+                        <td>Myoui Mina</td>
+                        <td>2024-11-25</td>
                         <td>
                             <button class="btn btn-sm btn-info">View</button>
                             <button class="btn btn-sm btn-warning">Edit</button>
@@ -161,7 +160,7 @@
                         <td>Printers</td>
                         <td><span class="badge bg-warning">Under Maintenance</span></td>
                         <td>Son Chaeyoung</td>
-                        <td>2024-12-2</td>
+                        <td>2024-12-02</td>
                         <td>
                             <button class="btn btn-sm btn-info">View</button>
                             <button class="btn btn-sm btn-warning">Edit</button>
@@ -173,19 +172,21 @@
                         <td>Hp Laptop</td>
                         <td>Monitors</td>
                         <td><span class="badge bg-success">Available</span></td>
-                        <td>Rodelie Kristel Mercado</td>
-                        <td>2024-12-1</td>
+                        <td>Rodelie Mercado</td>
+                        <td>2024-12-01</td>
                         <td>
                             <button class="btn btn-sm btn-info">View</button>
                             <button class="btn btn-sm btn-warning">Edit</button>
                             <button class="btn btn-sm btn-danger">Delete</button>
                         </td>
                     </tr>
+ 
                 </tbody>
             </table>
         </div>
     </div>
 
+ 
     <div class="row mt-3">
         <div class="col-12 text-end">
             <button class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#addAssetModal">
@@ -195,7 +196,7 @@
     </div>
 </div>
 
-<!-- Add Asset Modal -->
+
 <div class="modal fade" id="addAssetModal" tabindex="-1" aria-labelledby="addAssetModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -241,6 +242,8 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="addMaintenanceModal" tabindex="-1" aria-labelledby="addMaintenanceModalLabel" aria-hidden="true">
 
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
