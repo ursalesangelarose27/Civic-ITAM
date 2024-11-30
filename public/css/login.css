@@ -12,6 +12,32 @@ body {
     background-color: #ff8c00;
 }
 
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-wrapper .logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.form-wrapper .form-container {
+    flex: 1;
+}
+
+input.form-control:focus {
+    background-color: #f0f8ff !important;
+    border-color: #ff8c00 !important;
+    outline: none;
+}
+
+.card {
+    max-width: 800px;
+    width: 100%;
+}
+
 .logowrap {
     display: flex;
     justify-content: center;
