@@ -7,7 +7,7 @@ body {
     min-width: 250px;
     max-width: 250px;
     background-color: #ff6f00;
-    color: #fff;
+    color: #ffffff;
     position: fixed;
     height: 100vh;
     transition: all 0.3s;
@@ -18,7 +18,7 @@ body {
     margin-left: -250px;
 }
 #sidebar a {
-    color: #FFFFFF;
+    color: #fff;
     text-decoration: none;
     padding: 10px 15px;
     display: block;
