@@ -22,6 +22,7 @@
         <ul class="nav flex-column">
             <li><a href="../dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
             <li><a href="../assetdetails.php"><i class="fas fa-cogs"></i> Asset Details</a></li>
+            <li><a href="../pcassets.php"><i class="fas fa-desktop"></i> PC Assets</a></li>
             <li><a href="../status.php"><i class="fas fa-check-circle"></i> Status</a></li>
             <li><a href="../assetconsignments.php"><i class="fas fa-truck"></i> Consignment</a></li>
             <li><a href="#"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
@@ -73,21 +74,30 @@
 
 
             <div class="form-grid">
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="id">ID:</label>
                     <input type="text" id="id" class="input-field" placeholder="Enter ID">
+                </div> -->
+                <div class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" class="input-field" placeholder="Enter First Name">
                 </div>
                 <div class="form-group">
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" class="input-field" placeholder="Enter Full Name">
+                    <label for="firstname">Last Name:</label>
+                    <input type="text" id="lastname" class="input-field" placeholder="Enter Last Name">
                 </div>
+
                 <div class="form-group">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" class="input-field" placeholder="Enter Username">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="input-field" placeholder="Enter Email">
                 </div>
                 <div class="form-group">
                     <label for="password">Password:</label>
                     <input type="password" id="password" class="input-field" placeholder="Enter Password">
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" class="input-field" placeholder="Enter Username">
                 </div>
                 <div class="form-group">
                     <label for="contactNumber">Contact Number:</label>

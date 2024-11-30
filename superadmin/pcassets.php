@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIVIC | Asset Details</title>
+    <title>CIVIC | PC Asset </title>
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
@@ -31,8 +31,8 @@
         </div>
         <ul class="nav flex-column">
             <li><a href="./dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="./assetdetails.php" class="active"><i class="fas fa-cogs"></i> Asset Details</a></li>
-            <li><a href="./pcassets.php"><i class="fas fa-desktop"></i> PC Assets</a></li>
+            <li><a href="./assetdetails.php"><i class="fas fa-cogs"></i> Asset Details</a></li>
+            <li><a href="./pcassets.php" class="active"><i class="fas fa-desktop"></i> PC Assets</a></li>
             <li><a href="./status.php"><i class="fas fa-check-circle"></i> Status</a></li>
             <li><a href="./assetconsignment.php"><i class="fas fa-truck"></i> Consignment</a></li>
             <li><a href="./tickets.php"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
@@ -50,7 +50,7 @@
                 <button class="btn btn-orange" id="sidebarToggle">
                     <i class="bi bi-list"></i>
                 </button>
-                <a class="navbar-brand ms-3" href="#">Asset Details</a>
+                <a class="navbar-brand ms-3" href="#">PC Assets</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -79,7 +79,7 @@
             <div class="row mb-4">
                 <div class="col-12 d-flex justify-content-between">
                     <input type="text" id="searchInput" class="form-control w-50" placeholder="Search assets...">
-                    <a href="./add/assetdetails.php">
+                    <a href="#">
                         <button class="btn btn-orange" id="addAssetBtn">Add</button>
                     </a>
                 </div>
@@ -131,7 +131,7 @@
                             <td>
                                 <center>
                                     <div class="action-icons">
-                                        <a href="./edit/assetdetails.php" style="text-decoration: none;">
+                                        <a href="#" style="text-decoration: none;">
                                             <button class="icon-btn">
                                                 <i class="fas fa-edit"></i>
                                             </button>

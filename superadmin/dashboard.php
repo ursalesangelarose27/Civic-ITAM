@@ -22,6 +22,7 @@
         <ul class="nav flex-column">
             <li><a href="./dashboard.php" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
             <li><a href="./assetdetails.php"><i class="fas fa-cogs"></i> Asset Details</a></li>
+            <li><a href="./pcassets.php"><i class="fas fa-desktop"></i> PC Assets</a></li>
             <li><a href="./status.php"><i class="fas fa-check-circle"></i> Status</a></li>
             <li><a href="./assetconsignment.php"><i class="fas fa-truck"></i> Consignment</a></li>
             <li><a href="./tickets.php"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
@@ -128,6 +129,7 @@
                 </div>
 
                 <!-- Asset Distribution Pie Chart -->
+
                 <div class="col-lg-6 col-md-12">
                     <div class="card shadow border-0">
                         <div class="card-body">
