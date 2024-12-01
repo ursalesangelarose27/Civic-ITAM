@@ -8,7 +8,7 @@
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-    <link rel="stylesheet" href="../public/css/admin/assetmanagement.css">
+    <link rel="stylesheet" href="../public/css/admin/management.css">
     <link rel="stylesheet" href="../public/css/admin/sidebar.css">
 </head>
 
@@ -24,7 +24,7 @@
         <li><a href="./maintenancemanagement.php" class="nav-link text-white active"><i class="bi bi-tools"></i> Maintenance Management</a></li>
         <li><a href="./pcassets.php" class="nav-link text-white"><i class="bi bi-laptop"></i> PC's</a></li>
         <li><a href="./ticketsmanagement.php" class="nav-link text-white"><i class="bi bi-ticket-perforated"></i> Tickets</a></li>
-        <li><a href="./reminders.php" class="nav-link text-white"><i class="bi bi-clipboard-pulse"></i> Overdue</a></li>
+        <li><a href="./reminders.php" class="nav-link text-white"><i class="bi bi-exclamation-triangle"></i> Overdue</a></li>
         <li><a href="./reports.php" class="nav-link text-white"><i class="bi bi-file-earmark-text"></i> Reports</a></li>
         <li><a href="./diagnostichistory.php" class="nav-link text-white"><i class="fas fa-history"></i> Diagnostic History</a></li>
         <li><a href="./usermanagement.php" class="nav-link text-white"><i class="bi bi-person"></i> Users</a></li>
@@ -74,7 +74,6 @@
 
 
     <div class="row g-3">
- 
         <div class="col-lg-3 col-md-6">
             <div class="card shadow-sm border-0">
                 <div class="card-body d-flex align-items-center">

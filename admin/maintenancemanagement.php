@@ -9,7 +9,7 @@
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-    <link rel="stylesheet" href="../public/css/admin/maintenancemanagement.css">
+    <link rel="stylesheet" href="../public/css/admin/management.css">
     <link rel="stylesheet" href="../public/css/admin/sidebar.css">
 </head>
 
@@ -25,7 +25,7 @@
         <li><a href="./maintenancemanagement.php" class="nav-link text-white"><i class="bi bi-tools"></i> Maintenance Management</a></li>
         <li><a href="./pcassets.php" class="nav-link text-white"><i class="bi bi-laptop"></i> PC's</a></li>
         <li><a href="./ticketsmanagement.php" class="nav-link text-white"><i class="bi bi-ticket-perforated"></i> Tickets</a></li>
-        <li><a href="./reminders.php" class="nav-link text-white"><i class="bi bi-clipboard-pulse"></i> Overdue</a></li>
+        <li><a href="./reminders.php" class="nav-link text-white"><i class="bi bi-exclamation-triangle"></i> Overdue</a></li>
         <li><a href="./reports.php" class="nav-link text-white"><i class="bi bi-file-earmark-text"></i> Reports</a></li>
         <li><a href="./diagnostichistory.php" class="nav-link text-white"><i class="fas fa-history"></i> Diagnostic History</a></li>
         <li><a href="./usermanagement.php" class="nav-link text-white"><i class="bi bi-person"></i> Users</a></li>
@@ -70,56 +70,56 @@
                 <p class="text-muted">Manage and track the status of maintenance requests and updates for all assets.</p>
             </div>
         </div>
-        
-        <div class="col-lg-3 col-md-6">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body d-flex align-items-center">
-                        <i class="bi bi-check-circle card-icon text-success"></i>
-                        <div>
-                            <h6 class="card-title">Completed Maintenance</h6>
-                            <p class="card-value">20</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="row g-3">
-            <div class="col-lg-3 col-md-6">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body d-flex align-items-center">
-                        <i class="bi bi-file-earmark-text card-icon text-warning"></i>
-                        <div>
-                            <h6 class="card-title">Pending Maintenance</h6>
-                            <p class="card-value">7</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body d-flex align-items-center">
-                        <i class="bi bi-arrow-clockwise card-icon text-info"></i>
-                        <div>
-                            <h6 class="card-title">In Progress</h6>
-                            <p class="card-value">15</p>
-                        </div>
-                    </div>
-                </div>
-
         <div class="col-lg-3 col-md-6">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body d-flex align-items-center">
-                        <i class="bi bi-clipboard-pulse card-icon text-success"></i>
-                        <div>
-                            <h6 class="card-title">Overdue</h6>
-                            <p class="card-value">5</p>
-                        </div>
+            <div class="card shadow-sm border-0">
+                <div class="card-body d-flex align-items-center">
+                    <i class="bi bi-check-circle card-icon text-primary"></i>
+                    <div>
+                        <h6 class="card-title">Completed Maintenance</h6>
+                        <p class="card-value">150</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body d-flex align-items-center">
+                    <i class="bi bi-file-earmark-text card-icon text-success"></i>
+                    <div>
+                        <h6 class="card-title">Pending Maintenance</h6>
+                        <p class="card-value">120</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body d-flex align-items-center">
+                    <i class="bi bi-arrow-clockwise card-icon text-warning"></i>
+                    <div>
+                        <h6 class="card-title">In Progress</h6>
+                        <p class="card-value">25</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body d-flex align-items-center">
+                    <i class="bi bi-exclamation-triangle card-icon text-danger"></i>
+                    <div>
+                        <h6 class="card-title">Overdue</h6>
+                        <p class="card-value">5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
         <div class="row mt-4">
             <div class="col-12">
@@ -183,16 +183,63 @@
         </div>
 
         <div class="row mt-3">
-            <div class="col-12 text-end">
-                <button class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#addMaintenanceModal">
-                    <i class="bi bi-plus-lg"></i> Add New Maintenance Request
-                </button>
+        <div class="col-12 text-end">
+            <button class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#addAssetModal">
+                <i class="bi bi-plus-lg"></i> Add New Maintenance Request
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="addAssetModal" tabindex="-1" aria-labelledby="addAssetModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-orange text-white">
+                <h5 class="modal-title" id="addAssetModalLabel">Add New Maintenance Request</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="assetName" class="form-label">Maintenance Name</label>
+                        <input type="text" class="form-control" id="assetName" placeholder="Enter Maintenance name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="assetCategory" class="form-label">Category</label>
+                        <select class="form-select" id="assetCategory">
+                            <option value="">Select Category</option>
+                            <option value="Computers">Computers</option>
+                            <option value="Printers">Printers</option>
+                            <option value="Monitors">Monitors</option>
+                            <option value="Accessories">Accessories</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="assetStatus" class="form-label">Status</label>
+                        <select class="form-select" id="assetStatus">
+                            <option value="Available">Available</option>
+                            <option value="Assigned">Assigned</option>
+                            <option value="Under Maintenance">Under Maintenance</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="assetAssignee" class="form-label">Assigned To</label>
+                        <input type="text" class="form-control" id="assetAssignee" placeholder="Enter assignee name (if applicable)">
+                    </div>
+                    <div class="mb-3">
+                        <label for="assetRemarks" class="form-label">Remarks</label>
+                        <textarea class="form-control" id="assetRemarks" rows="3" placeholder="Additional information"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-orange">Add New Maintenance Request</button>
+                </form>
             </div>
         </div>
     </div>
 </div>
 
 <div class="modal fade" id="addMaintenanceModal" tabindex="-1" aria-labelledby="addMaintenanceModalLabel" aria-hidden="true">
+
 
 
 

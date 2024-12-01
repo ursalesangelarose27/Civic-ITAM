@@ -25,7 +25,7 @@
             <li><a href="./maintenancemanagement.php" class="nav-link text-white"><i class="bi bi-tools"></i> Maintenance Management</a></li>
             <li><a href="./pcassets.php" class="nav-link text-white"><i class="bi bi-laptop"></i> PC's</a></li>
             <li><a href="./ticketsmanagement.php" class="nav-link text-white"><i class="bi bi-ticket-perforated"></i> Tickets</a></li>
-            <li><a href="./reminders.php" class="nav-link text-white"><i class="bi bi-clipboard-pulse"></i> Overdue</a></li>
+            <li><a href="./reminders.php" class="nav-link text-white"><i class="bi bi-exclamation-triangle"></i> Overdue</a></li>
             <li><a href="./reports.php" class="nav-link text-white"><i class="bi bi-file-earmark-text"></i> Reports</a></li>
             <li><a href="./diagnostichistory.php" class="nav-link text-white"><i class="fas fa-history"></i> Diagnostic History</a></li>
             <li><a href="./usermanagement.php" class="nav-link text-white"><i class="bi bi-person"></i> Users</a></li>
@@ -64,7 +64,7 @@
 
         <div class="container-fluid py-4">
             <div class="row g-3">
-                <!-- Card 1 -->
+
                 <div class="col-lg-3 col-md-6">
                     <div class="card shadow border-0">
                         <div class="card-body d-flex align-items-center">
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 2 -->
+
                 <div class="col-lg-3 col-md-6">
                     <div class="card shadow border-0">
                         <div class="card-body d-flex align-items-center">
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 3 -->
+
                 <div class="col-lg-3 col-md-6">
                     <div class="card shadow border-0">
                         <div class="card-body d-flex align-items-center">
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 4 -->
+
                 <div class="col-lg-3 col-md-6">
                     <div class="card shadow border-0">
                         <div class="card-body d-flex align-items-center">
@@ -114,7 +114,6 @@
                 </div>
             </div>
 
-            <!-- Asset Growth Chart -->
             <div class="row g-3">
                 <div class="col-lg-6 col-md-12">
                     <div class="card shadow border-0">
@@ -124,8 +123,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Asset Distribution Pie Chart -->
 
                 <div class="col-lg-6 col-md-12">
                     <div class="card shadow border-0">
